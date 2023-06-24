@@ -4,8 +4,9 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:to_do_list/controller_binding.dart';
-import 'package:to_do_list/new_picker.dart';
 import 'package:to_do_list/service/model/task_add.dart';
+
+import 'view/auth/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,8 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      // home: SplashScreen(),
-      home: DateTimePickerBottomSheet(),
+      home: SplashScreen(),
     );
   }
 }
